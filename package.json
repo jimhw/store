@@ -1,0 +1,27 @@
+{
+  "name": "store",
+  "version": "1.0.0",
+  "description": "Store",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",		
+    "test": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jimhw/store.git"
+  },
+  "keywords": [
+    "Store"
+  ],
+  "author": "James Wong (jameswoa@gmail.com)",
+  "license": "SEE LICENSE IN <filename>",
+  "bugs": {
+    "url": "https://github.com/jimhw/store/issues"
+  },
+  "homepage": "https://github.com/jimhw/store#readme",
+  "dependencies": {
+    "express": "4.15.4",
+    "mongoose": "^4.11.9"
+  }
+}

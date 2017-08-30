@@ -1,0 +1,6 @@
+{
+	"port" : 3001,
+	"mongoURI" : "mongodb://localhost/store",
+	"geoURL" : "https://maps.googleapis.com/maps/api/geocode/json",
+	"apiKey" : ""
+}
