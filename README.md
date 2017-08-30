@@ -8,13 +8,13 @@ The solution uses the [Node.js](https://nodejs.org/) with [Express Framework](ht
 
 Express is a light-weight framework for easy to build web applications and APIs. It helps organize your web application into an MVC architecture on the server side. 
 
-MongoDB is a document-oriented database that stores data in collections of documents named JSON. It provides a persistent data storage that is easy to manipulate data compare to file.
+MongoDB is a document-oriented database that stores data in collections of documents named JSON. It provides a persistent data storage that is a lot easy to manipulate data compare to the file.
 
-This is using the [Google Geocoding API](https://developers.google.com/maps/documentation/geocoding/start) to get the latitude and longitude for a given address. It uses the built in HTTPS client to call the API directly.
+It uses the [Google Geocoding API](https://developers.google.com/maps/documentation/geocoding/start) to get the latitude and longitude for a given address. In the use case here, it is pretty straight forward to make the direct HTTPS client call to the API for the latitude and longitude without any third party library.
 
-It calculates the distance between 2 latitude and longitude points in miles of all the given stores and finds the closest one. 
+It calculates the distance between two latitude and longitude points in miles for all the given stores and finds the closest one.
 
-In addition, the data model has a category imlmentation. It can be used for any store with the provided category.
+In addition, the data model has a category imlmentation. It can be extended to any store with the provided category.
 
 ## Installation
 
