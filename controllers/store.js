@@ -110,7 +110,8 @@ exports.findNearest = (req, res) => {
 function distance(lat1, lng1, lat2, lng2) {
 	let p = Math.PI / 180
 	let c = Math.cos
-	let rad = 3539 // Min earth radius in miles
+	// Mean earth radius in miles
+	let rad = 3539
 	let a = 0.5 - c((lat2 - lat1) * p)/2 + c(lat1 * p) * c(lat2 * p) * (1 - c((lng2 - lng1) * p))/2
 	return 2*rad * Math.asin(Math.sqrt(a))
 }
