@@ -28,7 +28,7 @@ To install the application:
 
 ## Configuration
 
-Rename config.template to config.json
+Rename config.template to config.json.
 
 The API key can be obtained from the [Google Geocoding API](https://developers.google.com/maps/documentation/geocoding/get-api-key)
 

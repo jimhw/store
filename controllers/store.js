@@ -66,12 +66,12 @@ exports.import = (req, res) => {
 	return res.send(202)
 }
 
-// Find the nearest store given an address
+// Find the nearest store with a given address
 exports.findNearest = (req, res) => {
 	let lat = ''
 	let lng = ''
 	const apiKey = process.env.API_KEY || config.apiKey
-	geoURL = process.env.GEO_URL || config.geoURL
+	const geoURL = process.env.GEO_URL || config.geoURL
 	const url = geoURL+'?address='+req.query.address+'&key='+apiKey
 	let shortest = Number.MAX_VALUE
 	let result = {}
@@ -87,11 +87,11 @@ exports.findNearest = (req, res) => {
 			lat = body.results[0].geometry.location.lat
 			lng = body.results[0].geometry.location.lng
 	    console.log(
-	      `City: ${body.results[0].formatted_address} -`,
+	      `Address: ${body.results[0].formatted_address} -`,
 	      `Latitude: ${body.results[0].geometry.location.lat} -`,
 	      `Longitude: ${body.results[0].geometry.location.lng}`
 	    )
-			// find the nearest
+			// find the nearest store
 		  Store.find({}, (err, results) => {
 				results.forEach(r => {
 					d = distance(lat, lng, r.latitude, r.longitude)
@@ -106,7 +106,7 @@ exports.findNearest = (req, res) => {
 	})
 }
 
-// Calculate the distance between 2 latidue and longitude points
+// Calculate the distance between the two latidue and longitude points
 function distance(lat1, lng1, lat2, lng2) {
 	let p = Math.PI / 180
 	let c = Math.cos
