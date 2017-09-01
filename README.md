@@ -4,7 +4,7 @@ Find the Nearest Store
 
 An API for finding the nearest store with a given address using the latitude and longitude.
 
-The solution uses the [Node.js](https://nodejs.org/) with [Express Framework](https://expressjs.com/) and [MongoDB](https://www.mongodb.com/)
+The solution uses the [Node.js](https://nodejs.org/) with [Express Framework](https://expressjs.com/) and [MongoDB](https://www.mongodb.com/).
 
 Express is a light-weight framework for easy to build web applications and APIs. It helps organize your web application into an MVC architecture on the server side. 
 
@@ -30,7 +30,7 @@ To install the application:
 
 Rename config.template to config.json.
 
-The API key can be obtained from the [Google Geocoding API](https://developers.google.com/maps/documentation/geocoding/get-api-key)
+The API key can be obtained from the [Google Geocoding API](https://developers.google.com/maps/documentation/geocoding/get-api-key).
 
 Put the API KEY setup in the config.json or environment variable API_KEY.
 
@@ -114,13 +114,15 @@ For example:
 
 ## Future Enhancements
 
-* Unit Testing
-* Swagger API documentation
+* Find by category
+* OpenAPI or Swagger Specification
 * Authentication
+* Authorization
+* User Management
+* RBAC
 * Rate limiting
 * Throttling
 * CORS
-* pagination
 * Logging
 * Error handling
-* Find by category
+* Unit Testing
